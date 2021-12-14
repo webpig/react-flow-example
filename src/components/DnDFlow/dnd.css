@@ -1,0 +1,67 @@
+.dndflow {
+  display: flex;
+  height: 100vh;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  background: #fcfcfc;
+}
+
+.dndnode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 62px;
+  margin-bottom: 20px;
+  cursor: grab;
+  font-size: 12px;
+  padding: 0;
+  transform: translate(0, 0);
+}
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.icon-wrap.focus {
+  border-color: red;
+}
+
+.node-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.node-name {
+  margin-top: 10px;
+}
+
+.react-flow__controls {
+  bottom: 10px;
+  right: 10px;
+  left: unset;
+  position: absolute;
+  z-index: 5;
+}
+
+.react-flow__handle {
+  z-index: 9;
+}
